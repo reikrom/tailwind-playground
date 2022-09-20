@@ -26,7 +26,7 @@ const Grid = React.forwardRef<HTMLElement, GridProps>(function Grid(
     >
       {featured ? (
         <div className="absolute inset-0 -mx-5vw">
-          <div className="w-full h-full mx-auto rounded-lg bg-secondary max-w-8xl" />
+          <div className="bg-secondary max-w-8xl mx-auto h-full w-full rounded-lg" />
         </div>
       ) : null}
 
@@ -55,14 +55,14 @@ function GridLines() {
   // }
 
   return (
-    <div className="fixed inset-0 z-10 pointer-events-none select-none">
+    <div className="pointer-events-none fixed inset-0 z-10 select-none">
       <Grid>
         {Array.from({length: 12}).map((_, idx) => (
           <div
             key={idx}
-            className="flex items-start h-screen text-black bg-black opacity-10 dark:bg-white dark:text-white"
+            className="flex h-screen items-start bg-black text-black opacity-10 dark:bg-white dark:text-white"
           >
-            <div className="w-full pt-4 text-lg text-center text-black dark:text-white">
+            <div className="w-full pt-4 text-center text-lg text-black dark:text-white">
               {idx + 1}
             </div>
           </div>
