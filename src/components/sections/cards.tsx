@@ -5,6 +5,7 @@ import {CookieCard} from '../cards/CookieCard'
 import {Grid, GridLines} from '../Grid'
 import {WrittenBy} from '../cards/WrittenBy'
 import {TestingJavascript} from '../cards/TestingJavascript'
+import {ToggleCard} from '../cards/ToggleCard'
 
 const Cards = () => {
   return (
@@ -28,7 +29,12 @@ const Cards = () => {
           <WrittenBy />
         </div>
 
-        <TestingJavascript className="col-span-full mt-12 lg:col-span-6" />
+        <div className="col-span-full lg:col-span-6">
+          <TestingJavascript />
+        </div>
+        <div className="col-span-4 ">
+          <ToggleCard className="" />
+        </div>
       </Grid>
     </section>
   )
