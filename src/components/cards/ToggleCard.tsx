@@ -7,7 +7,7 @@ interface ToggleCardProps {
 
 const ToggleCard = ({className}: ToggleCardProps) => {
   return (
-    <div className="relative w-full bg-red-50 py-12 px-6 text-left">
+    <div className="relative w-full bg-red-300 py-12 px-6 text-left">
       <div className="mb-2 text-base font-bold uppercase text-red-500">
         project budgeting
       </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Card2 = () => {
+const ProductCard = () => {
   return (
-    <div className="relative flex-grow rounded bg-slate-800 px-8 py-8 text-slate-400">
+    <div className="relative w-full rounded bg-slate-800 px-8 py-8 text-slate-400">
       <div className="absolute -top-3 left-1/2 -translate-x-1/2 transform rounded-full bg-red-500 px-4 uppercase text-white">
         Most popular
       </div>
@@ -36,4 +36,4 @@ const Card2 = () => {
   )
 }
 
-export {Card2}
+export {ProductCard}

@@ -1,6 +1,6 @@
 import React from 'react'
-import {Card1} from '../cards/card1'
-import {Card2} from '../cards/card2'
+import {TravelCard} from '../cards/TravelCard'
+import {ProductCard} from '../cards/ProductCard'
 import {CookieCard} from '../cards/CookieCard'
 import {Grid, GridLines} from '../Grid'
 import {WrittenBy} from '../cards/WrittenBy'
@@ -11,21 +11,22 @@ const Cards = () => {
   return (
     <section className="flex flex-col bg-slate-100">
       <h2 className="mt-32 mb-14 text-6xl">Cards</h2>
-      {/* <div className="flex flex-wrap items-start gap-8 p-12 border border-stone-900"> */}
-      <GridLines />
+      {/* <GridLines /> */}
       <Grid rowGap>
-        <div className="col-span-4">
-          <Card1 />
+        <div className="col-span-full">
+          <div className="max-w-sm">
+            <TravelCard />
+          </div>
         </div>
         {/* product pricing card */}
-        <div className="col-span-4">
-          <Card2 />
+        <div className="col-span-full max-w-sm ">
+          <ProductCard />
         </div>
-        <div className="col-span-3" />
-        <div className="col-span-4">
+
+        <div className="col-span-full max-w-sm">
           <CookieCard />
         </div>
-        <div className="col-span-8">
+        <div className="col-span-full">
           <WrittenBy />
         </div>
 
@@ -34,6 +35,13 @@ const Cards = () => {
         </div>
         <div className="col-span-4 ">
           <ToggleCard className="" />
+        </div>
+
+        <div className="col-span-full row-span-6">
+          <div className="w-f h-f relative h-full bg-green-300 ">
+            <div className="h-f bg-green-[#30C85E] absolute left-0 bottom-0 top-0 w-2"></div>
+            /
+          </div>
         </div>
       </Grid>
     </section>

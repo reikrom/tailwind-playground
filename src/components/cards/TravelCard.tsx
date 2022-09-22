@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card1 = () => {
+const TravelCard = () => {
   return (
     <div className="overflow-hidden rounded-lg pb-8 shadow-2xl">
       <img
@@ -34,4 +34,4 @@ const Card1 = () => {
   )
 }
 
-export {Card1}
+export {TravelCard}
