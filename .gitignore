@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+.docz/static/public
+.docz/.cache
+.docz/public
+
 # testing
 /coverage
 
