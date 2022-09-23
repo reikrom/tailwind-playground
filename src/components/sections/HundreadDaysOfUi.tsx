@@ -10,7 +10,7 @@ const HundreadDaysOfUi = ({className}: HundreadDaysOfUiProps) => {
     <div className="relative mt-10 h-full w-full border-b border-slate-500 pb-4">
       <h2 className="text-4xl">100 Days of Ui</h2>
 
-      <Grid>
+      <Grid rowGap>
         <div className="relative z-10 col-span-full scale-105 border border-slate-100 bg-white px-4  text-left shadow-xl md:p-24 md:pb-40 lg:col-span-6">
           <div className="relative bottom-10 text-2xl text-slate-400">AE</div>
           <div className="text-left">
@@ -48,17 +48,17 @@ const HundreadDaysOfUi = ({className}: HundreadDaysOfUiProps) => {
           </div>
 
           <div className="flex gap-4">
-            <button className="cursor-pointer rounded bg-black px-8 py-2 text-white">
+            <button className="cursor-pointer rounded bg-black px-8 py-2 text-white whitespace-nowrap">
               Log in
             </button>
-            <button className="cursor-pointer rounded border border-slate-400 px-8 py-2 text-black">
+            <button className="cursor-pointer rounded border border-slate-400 px-8 py-2 text-black whitespace-nowrap">
               Sign up
             </button>
           </div>
         </div>
 
         <div
-          className="relative col-span-full h-full bg-slate-200 bg-cover p-6 lg:col-span-6 lg:-ml-6 lg:p-10"
+          className="relative col-span-full h-full bg-slate-200 bg-cover p-6 lg:col-span-6 lg:-ml-6 lg:p-10 min-h-screen"
           style={{
             background:
               'url(https://images.unsplash.com/photo-1604213410393-89f141bb96b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)',
