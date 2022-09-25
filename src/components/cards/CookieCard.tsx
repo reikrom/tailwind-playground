@@ -2,7 +2,7 @@ import React from 'react'
 
 const CookieCard = () => {
   return (
-    <div className=" relative border bg-slate-200 p-8">
+    <div className=" relative max-w-lg border bg-slate-200 p-8">
       <div className="absolute -top-6 left-1/2 h-16 w-16 -translate-x-1/2 border bg-red-200"></div>
       <div className="my-6 text-slate-700">
         We use cookies to provider a better user experience.
