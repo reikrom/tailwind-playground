@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import {Buttons} from './components/sections/Buttons'
 import {Cards} from './components/sections/cards'
 import {HundreadDaysOfUi} from './components/sections/HundreadDaysOfUi'
